@@ -1,0 +1,1634 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CUMBRE 200</title>
+    <link rel="stylesheet" href="assets/styles/main.css">
+    <link rel="icon" href="assets/img/LOGO.png" type="png/img">
+    <meta name="keywords" content="CUMBRE 200, CUMBRE, Mundo Ejecutivo, Mujeres, Marzo"/>
+    <meta name="revised" content="17/02/2024" />
+    <meta name="description" content="Únete a CUMBRE 200, un evento que celebra y reconoce a las mujeres más influyentes e importantes de México.">
+
+
+    <meta property="og:site_name" content="CUMBRE 200" />
+    <meta property="og:title" content="CUMBRE 200, Las mujeres más influyentes de México" />
+
+    <!--Twitter Tag | Inicio-->
+    <meta name="twitter:title" content="CUMBRE 200, Las mujeres más influyentes de México">
+    <meta name="twitter:site" content="@Cumbre 200">
+    <meta name="twitter:creator" content="@Cumbre 200">
+    <!--Twitter Tag | Final-->
+
+
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-WJQS77G1VW"></script>
+    <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+
+    gtag('config', 'G-WJQS77G1VW');
+    </script>
+
+
+
+
+
+    <!-- SISTEMA CARRUSEL | Final -->
+    <link rel="stylesheet" href="sistemas/demo/demo.css">
+    <link rel="stylesheet" href="sistemas/dist/jquery.flipster.min.css">
+
+    <script src="sistemas/demo/jquery.min.js"></script>
+    <script src="sistemas/dist/jquery.flipster.min.js"></script>
+    <!-- SISTEMA CARRUSEL | Final -->
+
+
+
+
+
+<style>
+
+.arvo-regular {
+  font-family: "Arvo", serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.arvo-regular-italic {
+  font-family: "Arvo", serif;
+  font-weight: 400;
+  font-style: italic;
+}
+
+.arvo-bold {
+  font-family: "Arvo", serif;
+  font-weight: 700;
+  font-style: normal;
+}
+
+.arvo-bold-italic {
+  font-family: "Arvo", serif;
+  font-weight: 700;
+  font-style: italic;
+}
+
+.carousel {
+    position: relative;
+    width: 100%;
+    height: auto;
+    overflow: hidden;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-content: center;
+}
+
+.carousel-inner {
+    transition: transform 0.5s ease;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-content: center;
+    width: 100%;
+    height: auto;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    gap: 5%;
+}
+
+.card{
+    margin: 0%;
+    padding: 0%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-content: center;
+    background: #ffffff;
+    width: 18%;
+    height: 320px;
+    border: #CED5DC 1px solid;
+    border-radius: 15px;
+    box-shadow: 0px 0px 10px #00000040;
+    overflow: hidden;
+    min-width: 210px;
+    transition: 0.5s;
+}
+
+.card:hover{
+    box-shadow: 0px 0px 10px #8d2145;
+}
+
+.card_seccion_1{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-content: center;
+    width: 100%;
+    height: 30%;
+    background: linear-gradient(45deg, #550d4e, 75%, #8d2145);
+}
+
+.card_seccion_2{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-content: center;
+    width: 100%;
+    height: 50%;
+}
+
+.card_seccion_3{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-content: center;
+    width: 100%;
+    height: 20%;
+}
+
+.boton_flechas{
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: rgba(0, 0, 0, 0.5);
+    color: white;
+    border: none;
+    cursor: pointer;
+    padding: 10px;
+    cursor: pointer;
+}
+
+.imagen_panelista{
+    border-radius: 100%;
+    object-fit: cover;
+    width: 140px;
+    height: 140px;
+    aspect-ratio: 1/1;
+    border: 4px #CED5DC solid;
+    transform: translateY(30%);
+}
+
+.boton_tarjetas{
+    background: linear-gradient(45deg, #550d4e, 75%, #8d2145);
+    width: 40%;
+    height: 50%;
+    border-radius: 10px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-content: center;
+    margin: 0%;
+    padding: 0%;
+    border: none;
+    cursor: pointer;
+    transition: 0.5s;
+    color: #ffffff;
+    font-size: 0.8vw;
+}
+
+.boton_tarjetas:hover{
+    box-shadow: 0px 0px 8px#550d4e;
+    animation: moveBackground 5s linear infinite;
+    background-size: 400% 400%;
+}
+
+.boton_tarjetas:active{
+    box-shadow: 0px 0px 8px#8d2145;
+    animation: moveBackground 5s linear infinite;
+    background-size: 400% 400%;
+}
+
+@keyframes moveBackground {
+    0% {
+        background-position: 0% 50%;
+    }
+    50% {
+        background-position: 100% 50%;
+    }
+    100% {
+        background-position: 0% 50%;
+    }
+}
+
+.prev {
+  left: 0;
+}
+
+.next {
+  right: 0;
+}
+
+.dots-container {
+    text-align: center;
+    margin-top: 10px;
+}
+
+.dot {
+    height: 10px;
+    width: 10px;
+    background-color: #bbb;
+    border-radius: 50%;
+    display: inline-block;
+    margin: 0 5px;
+    cursor: pointer;
+}
+
+.active-dot {
+    background-color: #717171;
+}
+
+.texto_nombre_panelista{
+    font-family: "arvo";
+    color: #000000;
+    font-weight: bold;
+    width: 80%;
+    text-align: center;
+    margin-top: 60px;
+    font-size: 1.2vw;
+    cursor: default;
+}
+
+.texto_descripcion_panelista{
+    font-family: "arvo";
+    color: #000000;
+    width: 80%;
+    text-align: center;
+    margin-top: 10px;
+    font-size: 0.78vw;
+    cursor: default;
+}
+
+@media screen and (min-width:704px) and (max-width: 1002px) and (min-height:0px) and (max-height:2700px){
+    .card{
+        margin: 0%;
+        padding: 0%;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-content: center;
+        background: #ffffff;
+        width: 20%;
+        height: 200px;
+        border: #CED5DC 1px solid;
+        border-radius: 15px;
+        box-shadow: 0px 0px 10px #00000040;
+        overflow: hidden;
+        min-width: 140px;
+        transition: 0.5s;
+    }
+
+    .imagen_panelista{
+        border-radius: 100%;
+        object-fit: cover;
+        width: 80px;
+        height: 80px;
+        aspect-ratio: 1/1;
+        border: 4px #CED5DC solid;
+        transform: translateY(35%);
+    }
+
+    .texto_nombre_panelista{
+        font-family: "arvo";
+        color: #000000;
+        font-weight: bold;
+        width: 80%;
+        text-align: center;
+        margin-top: 40px;
+        font-size: 1.4vw;
+    }
+
+    .texto_descripcion_panelista{
+        font-family: "arvo";
+        color: #000000;
+        width: 80%;
+        text-align: center;
+        margin-top: 10px;
+        font-size: 0.9vw;
+    }
+}
+
+@media screen and (min-width:0px) and (max-width: 703px) and (min-height:0px) and (max-height:2700px){
+    .card{
+        margin: 0%;
+        padding: 0%;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-content: center;
+        background: #ffffff;
+        width: 40%;
+        height: 200px;
+        border: #CED5DC 1px solid;
+        border-radius: 15px;
+        box-shadow: 0px 0px 10px #00000040;
+        overflow: hidden;
+        min-width: 140px;
+        transition: 0.5s;
+    }
+
+    .imagen_panelista{
+        border-radius: 100%;
+        object-fit: cover;
+        width: 60px;
+        height: 60px;
+        aspect-ratio: 1/1;
+        border: 4px #CED5DC solid;
+        transform: translateY(40%);
+    }
+
+    .texto_nombre_panelista{
+        font-family: "arvo";
+        color: #000000;
+        font-weight: bold;
+        width: 80%;
+        text-align: center;
+        margin-top: 40px;
+        font-size: 2.7vw;
+    }
+
+    .texto_descripcion_panelista{
+        font-family: "arvo";
+        color: #000000;
+        width: 80%;
+        text-align: center;
+        margin-top: 10px;
+        font-size: 2.2vw;
+    }
+
+    .boton_tarjetas{
+        background: linear-gradient(45deg, #550d4e, 75%, #8d2145);
+        width: 40%;
+        height: 50%;
+        border-radius: 10px;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-content: center;
+        margin: 0%;
+        padding: 0%;
+        border: none;
+        cursor: pointer;
+        transition: 0.5s;
+        color: #ffffff;
+        font-size: 1.7vw;
+    }
+}
+</style>
+</head>
+<body>
+
+    <div class="ancla">
+        
+        <div class="ancla_seccion_1">
+            <img src="assets/img/LOGO.png" class="imagen_ancla" alt="CUMBRE 200">
+        </div>
+        
+        <div class="ancla_seccion_2">
+            <div class="ancla_opciones" onClick="javascript:ancla_speakers()">
+                <p class="texto_ancla_opciones">SPEAKERS</p>
+            </div>        
+            <div class="ancla_opciones" onClick="javascript:ancla_cumbre200()">
+                <p class="texto_ancla_opciones">CUMBRE 200</p>
+            </div> 
+            <div class="ancla_opciones" onClick="javascript:ancla_sponsors()">
+                <p class="texto_ancla_opciones">SPONSORS</p>
+            </div>
+            <div class="ancla_opciones" onClick="javascript:ancla_registrate()">
+                <p class="texto_ancla_opciones">EVENTO</p>
+            </div>
+        </div>
+
+    </div>
+
+    <header class="contenedor_automatico">
+
+        <div class="contenedor_principal">
+            <video autoplay loop muted playsinline preload="auto" class="video_portada">
+                <source src="assets/videos/mujerescumbre200.mp4" type="video/mp4">
+            </video>
+        </div>
+
+
+
+
+
+        <div class="contenedor_universal ajuste_margin_top" id="speakers">
+
+            <div class="contenedor_universal_encabezado ajuste_end">
+                <div class="contenedor_universal_encabezado_seccion_2">
+                    <div class="contenedor_universal_titulo">
+                        <div class="contenedor_circulos">
+                            <div class="circulo_1"></div>
+                        </div>
+                        <div class="contenedor_circulos">
+                            <div class="circulo_2"></div>
+                        </div>
+                        <div class="contenedor_circulos">
+                            <div class="circulo_3"></div>
+                        </div>
+                        <div class="contenedor_texto_universal_titulo">
+                            <p class="texto_universal_titulo">SPEAKERS</p>
+                        </div>
+                        <div class="contenedor_circulos">
+                            <div class="circulo_3"></div>
+                        </div>
+                        <div class="contenedor_circulos">
+                            <div class="circulo_2"></div>
+                        </div>
+                        <div class="contenedor_circulos">
+                            <div class="circulo_1"></div>
+                        </div>
+                    </div>
+                    <div class="contenedor_universal_descripcion ajuste_descripcion_height">
+                        <p class="texto_universal_descripcion">En este encuentro, abordarán la trascendental importancia de la participación femenina en la industria empresarial, destacando como la dedicación y la perseverancia pueden llevarlas a alcanzar altos niveles de éxito. </p>
+                    </div>
+                </div>
+                <div class="contenedor_universal_encabezado_seccion_1 ajuste_end">
+                    <img src="assets/img/burbujas3.jpg" class="imagen_burbujas_1" alt="CUMBRE 200">
+                </div>
+            </div>
+
+
+            <div class="carousel">
+                <div class="carousel-inner">
+                    <div class="card">
+                        <div class="card_seccion_1">
+                            <img src="assets/img/carolinamejia.jpg" class="imagen_panelista" alt="Carolina Mejía">
+                        </div>
+                        <div class="card_seccion_2">
+                            <p class="texto_nombre_panelista">Carolina Mejía</p>
+                            <p class="texto_descripcion_panelista">"Vicepresidenta de Canon Mexicana"</p>
+                        </div>
+                        <div class="card_seccion_3">
+                            <button class="boton_tarjetas" onClick="javascript:carolinamejia()">CONÓCELA</button>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <div class="card_seccion_1">
+                            <img src="assets/img/karen.jpg" class="imagen_panelista" alt="Karen Golberg">
+                        </div>
+                        <div class="card_seccion_2">
+                            <p class="texto_nombre_panelista">Karen Goldberg</p>
+                            <p class="texto_descripcion_panelista">"CMO & Directora Senior de Marketing Mobile Experience Samsung México"</p>
+                        </div>
+                        <div class="card_seccion_3">
+                            <button class="boton_tarjetas" onClick="javascript:karengolberg()">CONÓCELA</button>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <div class="card_seccion_1">
+                            <img src="assets/img/normacontreras.jpg" class="imagen_panelista" alt="Norma Contreras">
+                        </div>
+                        <div class="card_seccion_2">
+                            <p class="texto_nombre_panelista">Norma Contreras</p>
+                            <p class="texto_descripcion_panelista">"Presidenta de Distrito de Mujeres"</p>
+                        </div>
+                        <div class="card_seccion_3">
+                            <button class="boton_tarjetas" onClick="javascript:normacontreras()">CONÓCELA</button>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <div class="card_seccion_1">
+                            <img src="assets/img/rosyortiz.jpg" class="imagen_panelista" alt="Rosy Ortíz">
+                        </div>
+                        <div class="card_seccion_2">
+                            <p class="texto_nombre_panelista">Rosy Ortíz</p>
+                            <p class="texto_descripcion_panelista">"CEO de InterEmpleos"</p>
+                        </div>
+                        <div class="card_seccion_3">
+                            <button class="boton_tarjetas" onClick="javascript:rosyortiz()">CONÓCELA</button>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <div class="card_seccion_1">
+                            <img src="assets/img/alejandraabad.jpg" class="imagen_panelista" alt="Alejandra Abad" loading="lazy">
+                        </div>
+                        <div class="card_seccion_2">
+                            <p class="texto_nombre_panelista">Alejandra Abad</p>
+                            <p class="texto_descripcion_panelista">"Cofundadora de Distrito de Mujeres"</p>
+                        </div>
+                        <div class="card_seccion_3">
+                            <button class="boton_tarjetas" onClick="javascript:alejandrabad()">CONÓCELA</button>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <div class="card_seccion_1">
+                            <img src="assets/img/marilu.jpg" class="imagen_panelista" alt="Marilú Castañeda" loading="lazy">
+                        </div>
+                        <div class="card_seccion_2">
+                            <p class="texto_nombre_panelista">Marilú Castañeda</p>
+                            <p class="texto_descripcion_panelista">"Directora General Unilever México y Directora General Nutrition Latinoamérica"</p>
+                        </div>
+                        <div class="card_seccion_3">
+                            <button class="boton_tarjetas" onClick="javascript:marilu()">CONÓCELA</button>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <div class="card_seccion_1">
+                            <img src="assets/img/esther.jpg" class="imagen_panelista" alt="Esther Riveroll" loading="lazy">
+                        </div>
+                        <div class="card_seccion_2">
+                            <p class="texto_nombre_panelista">Esther Riveroll</p>
+                            <p class="texto_descripcion_panelista">"CEO de Alldatum"</p>
+                        </div>
+                        <div class="card_seccion_3">
+                            <button class="boton_tarjetas" onClick="javascript:esterriveroll()">CONÓCELA</button>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <div class="card_seccion_1">
+                            <img src="assets/img/erikaquevedo.jpg" class="imagen_panelista ajuste_panelista" alt="Erika Quevedo" loading="lazy">
+                        </div>
+                        <div class="card_seccion_2">
+                            <p class="texto_nombre_panelista">Erika Quevedo</p>
+                            <p class="texto_descripcion_panelista">"Directora General del Consejo de Empresas Globales"</p>
+                        </div>
+                        <div class="card_seccion_3">
+                            <button class="boton_tarjetas" onClick="javascript:erikaquevedo()">CONÓCELA</button>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <div class="card_seccion_1">
+                            <img src="assets/img/linetpuente.jpg" class="imagen_panelista" alt="Linet Puente" loading="lazy">
+                        </div>
+                        <div class="card_seccion_2">
+                            <p class="texto_nombre_panelista">Linet Puente</p>
+                            <p class="texto_descripcion_panelista">"Comunicadora"</p>
+                        </div>
+                        <div class="card_seccion_3">
+                            <button class="boton_tarjetas" onClick="javascript:linetpuente()">CONÓCELA</button>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <div class="card_seccion_1">
+                            <img src="assets/img/gabrielatorres.jpg" class="imagen_panelista" alt="Gabriela Torre" loading="lazy">
+                        </div>
+                        <div class="card_seccion_2">
+                            <p class="texto_nombre_panelista">Gabriela Torre</p>
+                            <p class="texto_descripcion_panelista">"Cofundadora de Distrito de Mujeres"</p>
+                        </div>
+                        <div class="card_seccion_3">
+                            <button class="boton_tarjetas" onClick="javascript:gabrielatorres()">CONÓCELA</button>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <div class="card_seccion_1">
+                            <img src="assets/img/marthamosqueda.jpg" class="imagen_panelista ajuste_panelista" alt="Martha Mosqueda" loading="lazy">
+                        </div>
+                        <div class="card_seccion_2">
+                            <p class="texto_nombre_panelista">Martha Mosqueda</p>
+                            <p class="texto_descripcion_panelista">"Escritora y Conferencista"</p>
+                        </div>
+                        <div class="card_seccion_3">
+                            <button class="boton_tarjetas" onClick="javascript:marthamosqueda()">CONÓCELA</button>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <div class="card_seccion_1">
+                            <img src="assets/img/tatianasoberon.jpg" class="imagen_panelista" alt="Tatiana Soberón" loading="lazy">
+                        </div>
+                        <div class="card_seccion_2">
+                            <p class="texto_nombre_panelista">Tatiana Soberón</p>
+                            <p class="texto_descripcion_panelista">"Cantante y bióloga"</p>
+                        </div>
+                        <div class="card_seccion_3">
+                            <button class="boton_tarjetas" onClick="javascript:tatianasoberon()">CONÓCELA</button>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <div class="card_seccion_1">
+                            <img src="assets/img/cathiacarrillo.jpg" class="imagen_panelista" alt="Cathia Carillo" loading="lazy">
+                        </div>
+                        <div class="card_seccion_2">
+                            <p class="texto_nombre_panelista">Cathia Carrillo</p>
+                            <p class="texto_descripcion_panelista">"Cofundadora de Distrito de Mujeres"</p>
+                        </div>
+                        <div class="card_seccion_3">
+                            <button class="boton_tarjetas" onClick="javascript:cathiacarrillo()">CONÓCELA</button>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <div class="card_seccion_1">
+                            <img src="assets/img/catalina.jpeg" class="imagen_panelista" alt="Catalina Irurita" loading="lazy">
+                        </div>
+                        <div class="card_seccion_2">
+                            <p class="texto_nombre_panelista">Catalina Irurita</p>
+                            <p class="texto_descripcion_panelista">"Consultora lider de opinión en tecnología y conferencista internacional"</p>
+                        </div>
+                        <div class="card_seccion_3">
+                            <button class="boton_tarjetas" onClick="javascript:catalina()">CONÓCELA</button>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <div class="card_seccion_1">
+                            <img src="assets/img/taniapimentel.jpg" class="imagen_panelista" alt="Tania Pimentel" loading="lazy">
+                        </div>
+                        <div class="card_seccion_2">
+                            <p class="texto_nombre_panelista">Tania Pimentel</p>
+                            <p class="texto_descripcion_panelista">"Fundadora Women Index"</p>
+                        </div>
+                        <div class="card_seccion_3">
+                            <button class="boton_tarjetas" onClick="javascript:taniapimentel()">CONÓCELA</button>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <div class="card_seccion_1">
+                            <img src="assets/img/adrianasiqueiros.jpg" class="imagen_panelista ajuste_panelista" alt="Adriana Siqueiros" loading="lazy">
+                        </div>
+                        <div class="card_seccion_2">
+                            <p class="texto_nombre_panelista">Adriana Siqueiros</p>
+                            <p class="texto_descripcion_panelista">"Asesora Política"</p>
+                        </div>
+                        <div class="card_seccion_3">
+                            <button class="boton_tarjetas" onClick="javascript:adrianasiqueiros()">CONÓCELA</button>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <div class="card_seccion_1">
+                            <img src="assets/img/anamaria.jpg" class="imagen_panelista" alt="Ana María" loading="lazy">
+                        </div>
+                        <div class="card_seccion_2">
+                            <p class="texto_nombre_panelista">Ana María</p>
+                            <p class="texto_descripcion_panelista">"Periodista"</p>
+                        </div>
+                        <div class="card_seccion_3">
+                            <button class="boton_tarjetas" onClick="javascript:anamaria()">CONÓCELA</button>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <div class="card_seccion_1">
+                            <img src="assets/img/dianarodrigez.jpg" class="imagen_panelista ajuste_panelista" alt="Diana Rodríguez" loading="lazy">
+                        </div>
+                        <div class="card_seccion_2">
+                            <p class="texto_nombre_panelista">Diana Rodríguez</p>
+                            <p class="texto_descripcion_panelista">"Directora de Marketing y Comunicación de Chirey"</p>
+                        </div>
+                        <div class="card_seccion_3">
+                            <button class="boton_tarjetas" onClick="javascript:dianarodriguez()">CONÓCELA</button>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <div class="card_seccion_1">
+                            <img src="assets/img/patricia.jpg" class="imagen_panelista ajuste_panelista" alt="Patricia González" loading="lazy">
+                        </div>
+                        <div class="card_seccion_2">
+                            <p class="texto_nombre_panelista">Patricia González</p>
+                            <p class="texto_descripcion_panelista">"Vice President American Society of Mexico"</p>
+                        </div>
+                        <div class="card_seccion_3">
+                            <button class="boton_tarjetas" onClick="javascript:patriciagonzalez()">CONÓCELA</button>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <div class="card_seccion_1">
+                            <img src="assets/img/karlaortiz.jpg" class="imagen_panelista ajuste_panelista" alt="Karla Ortíz" loading="lazy">
+                        </div>
+                        <div class="card_seccion_2">
+                            <p class="texto_nombre_panelista">Karla Ortíz</p>
+                            <p class="texto_descripcion_panelista">"CEO, Clarins México"</p>
+                        </div>
+                        <div class="card_seccion_3">
+                            <button class="boton_tarjetas" onClick="javascript:karlaortiz()">CONÓCELA</button>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <div class="card_seccion_1">
+                            <img src="assets/img/samiraherrera.jpg" class="imagen_panelista" alt="Samira Herrera" loading="lazy">
+                        </div>
+                        <div class="card_seccion_2">
+                            <p class="texto_nombre_panelista">Samira Herrara</p>
+                            <p class="texto_descripcion_panelista">"Comunicación y relaciones públicas, Huawei"</p>
+                        </div>
+                        <div class="card_seccion_3">
+                            <button class="boton_tarjetas" onClick="javascript:samiraherrera()">CONÓCELA</button>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <div class="card_seccion_1">
+                            <img src="assets/img/paularuiz.jpg" class="imagen_panelista" alt="Paula Ruiz" loading="lazy">
+                        </div>
+                        <div class="card_seccion_2">
+                            <p class="texto_nombre_panelista">Paula Ruiz</p>
+                            <p class="texto_descripcion_panelista">"Directora de Seguros, SURA"</p>
+                        </div>
+                        <div class="card_seccion_3">
+                            <button class="boton_tarjetas" onClick="javascript:paularuiz()">CONÓCELA</button>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <div class="card_seccion_1">
+                            <img src="assets/img/mariasalceda.jpg" class="imagen_panelista ajuste_panelista" alt="María Salceda" loading="lazy">
+                        </div>
+                        <div class="card_seccion_2">
+                            <p class="texto_nombre_panelista">María Salceda</p>
+                            <p class="texto_descripcion_panelista">"Gerente Sr. Comunicación Corporativa, CHEP Latinoamérica"</p>
+                        </div>
+                        <div class="card_seccion_3">
+                            <button class="boton_tarjetas" onClick="javascript:mariasalceda()">CONÓCELA</button>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <div class="card_seccion_1">
+                            <img src="assets/img/marialuisa.jpg" class="imagen_panelista" alt="Maria Luisa" loading="lazy">
+                        </div>
+                        <div class="card_seccion_2">
+                            <p class="texto_nombre_panelista">María Luisa</p>
+                            <p class="texto_descripcion_panelista">"Directora de Talento y Desarrollo, Grupo Coppel"</p>
+                        </div>
+                        <div class="card_seccion_3">
+                            <button class="boton_tarjetas" onClick="javascript:marialuisa()">CONÓCELA</button>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <div class="card_seccion_1">
+                            <img src="assets/img/florenciatorres.jpg" class="imagen_panelista" alt="Florencia Torres" loading="lazy">
+                        </div>
+                        <div class="card_seccion_2">
+                            <p class="texto_nombre_panelista">Florencia Torres</p>
+                            <p class="texto_descripcion_panelista">"Healt Coach y Chef"</p>
+                        </div>
+                        <div class="card_seccion_3">
+                            <button class="boton_tarjetas" onClick="javascript:florenciatorres()">CONÓCELA</button>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <div class="card_seccion_1">
+                            <img src="assets/img/isabelstunder.jpg" class="imagen_panelista" alt="Isabel Stunder" loading="lazy">
+                        </div>
+                        <div class="card_seccion_2">
+                            <p class="texto_nombre_panelista">Isabel Studer</p>
+                            <p class="texto_descripcion_panelista">"Presidenta, Sostenibilidad Global A.C."</p>
+                        </div>
+                        <div class="card_seccion_3">
+                            <button class="boton_tarjetas" onClick="javascript:isabelstunder()">CONÓCELA</button>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <div class="card_seccion_1">
+                            <img src="assets/img/auramora.jpg" class="imagen_panelista" alt="Aura Mora" loading="lazy">
+                        </div>
+                        <div class="card_seccion_2">
+                            <p class="texto_nombre_panelista">Aura Mora</p>
+                            <p class="texto_descripcion_panelista">"Regional Director, Global Sales México and Guatemala, JW Marriott"</p>
+                        </div>
+                        <div class="card_seccion_3">
+                            <button class="boton_tarjetas" onClick="javascript:auramora()">CONÓCELA</button>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <div class="card_seccion_1">
+                            <img src="assets/img/angelicaoropeza.jpg" class="imagen_panelista" alt="Angélica Oropeza" loading="lazy">
+                        </div>
+                        <div class="card_seccion_2">
+                            <p class="texto_nombre_panelista">Angélica Oropeza</p>
+                            <p class="texto_descripcion_panelista">"Directora General, Arena Ciudad de México"</p>
+                        </div>
+                        <div class="card_seccion_3">
+                            <button class="boton_tarjetas" onClick="javascript:angelicaoropeza()">CONÓCELA</button>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <div class="card_seccion_1">
+                            <img src="assets/img/danielagonzalez.jpg" class="imagen_panelista" alt="Daniela González" loading="lazy">
+                        </div>
+                        <div class="card_seccion_2">
+                            <p class="texto_nombre_panelista">Daniela González</p>
+                            <p class="texto_descripcion_panelista">"Director of Salles and Marketing, JW Marriot Mexico City Polanco"</p>
+                        </div>
+                        <div class="card_seccion_3">
+                            <button class="boton_tarjetas" onClick="javascript:danielagonzalez()">CONÓCELA</button>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <div class="card_seccion_1">
+                            <img src="assets/img/analuisa.jpg" class="imagen_panelista" alt="Ana Luisa" loading="lazy">
+                        </div>
+                        <div class="card_seccion_2">
+                            <p class="texto_nombre_panelista">Ana Luisa</p>
+                            <p class="texto_descripcion_panelista">"Directora General, Hub 32"</p>
+                        </div>
+                        <div class="card_seccion_3">
+                            <button class="boton_tarjetas" onClick="javascript:analuisa()">CONÓCELA</button>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <div class="card_seccion_1">
+                            <img src="assets/img/angelaavila.jpg" class="imagen_panelista ajuste_panelista" alt="Ángela Ávila" loading="lazy">
+                        </div>
+                        <div class="card_seccion_2">
+                            <p class="texto_nombre_panelista">Ángela Ávila</p>
+                            <p class="texto_descripcion_panelista">"Directora de Finanzas, GSK"</p>
+                        </div>
+                        <div class="card_seccion_3">
+                            <button class="boton_tarjetas" onClick="javascript:angelaavila()">CONÓCELA</button>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <div class="card_seccion_1">
+                            <img src="assets/img/macarena.jpg" class="imagen_panelista ajuste_panelista" alt="Macarena Chaves" loading="lazy">
+                        </div>
+                        <div class="card_seccion_2">
+                            <p class="texto_nombre_panelista">Macarena Chaves</p>
+                            <p class="texto_descripcion_panelista">"Directora de Ventas México en BioElements Group"</p>
+                        </div>
+                        <div class="card_seccion_3">
+                            <button class="boton_tarjetas" onClick="javascript:macarenachaves()">CONÓCELA</button>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <div class="card_seccion_1">
+                            <img src="assets/img/niza.jpg" class="imagen_panelista ajuste_panelista" alt="Niza Campuzano" loading="lazy">
+                        </div>
+                        <div class="card_seccion_2">
+                            <p class="texto_nombre_panelista">Niza Campuzano</p>
+                            <p class="texto_descripcion_panelista">"CEO de Niza Co"</p>
+                        </div>
+                        <div class="card_seccion_3">
+                            <button class="boton_tarjetas" onClick="javascript:nizacampuzano()">CONÓCELA</button>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <div class="card_seccion_1">
+                            <img src="assets/img/mireya.jpg" class="imagen_panelista ajuste_panelista" alt="Mireya Rangel" loading="lazy">
+                        </div>
+                        <div class="card_seccion_2">
+                            <p class="texto_nombre_panelista">Mireya Rangel</p>
+                            <p class="texto_descripcion_panelista">"Directora de Recursos Humanos de Minsait"</p>
+                        </div>
+                        <div class="card_seccion_3">
+                            <button class="boton_tarjetas" onClick="javascript:mireya()">CONÓCELA</button>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <div class="card_seccion_1">
+                            <img src="assets/img/paulina.jpg" class="imagen_panelista ajuste_panelista" alt="Paulina Peterson" loading="lazy">
+                        </div>
+                        <div class="card_seccion_2">
+                            <p class="texto_nombre_panelista">Paulina Peterson</p>
+                            <p class="texto_descripcion_panelista">"Asesora de presidencia en Miss Universo"</p>
+                        </div>
+                        <div class="card_seccion_3">
+                            <button class="boton_tarjetas" onClick="javascript:paulina()">CONÓCELA</button>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <div class="card_seccion_1">
+                            <img src="assets/img/teresa.jpg" class="imagen_panelista ajuste_panelista" alt="Teresa Gutiérrez" loading="lazy">
+                        </div>
+                        <div class="card_seccion_2">
+                            <p class="texto_nombre_panelista">Teresa Gutiérrez</p>
+                            <p class="texto_descripcion_panelista">"Líder Empresarial"</p>
+                        </div>
+                        <div class="card_seccion_3">
+                            <button class="boton_tarjetas" onClick="javascript:teresa()">CONÓCELA</button>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <div class="card_seccion_1">
+                            <img src="assets/img/veronica.jpg" class="imagen_panelista ajuste_panelista" alt="Verónica Salame" loading="lazy">
+                        </div>
+                        <div class="card_seccion_2">
+                            <p class="texto_nombre_panelista">Verónica Salame</p>
+                            <p class="texto_descripcion_panelista">"Activista social"</p>
+                        </div>
+                        <div class="card_seccion_3">
+                            <button class="boton_tarjetas" onClick="javascript:veronicasalame()">CONÓCELA</button>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <div class="card_seccion_1">
+                            <img src="assets/img/viridiana.jpg" class="imagen_panelista ajuste_panelista" alt="Viridiana Hernández" loading="lazy">
+                        </div>
+                        <div class="card_seccion_2">
+                            <p class="texto_nombre_panelista">Viridiana Hernández</p>
+                            <p class="texto_descripcion_panelista">"Líder de ESG y Regeneración de Walmart de México y Centroamérica"</p>
+                        </div>
+                        <div class="card_seccion_3">
+                            <button class="boton_tarjetas" onClick="javascript:viridiana()">CONÓCELA</button>
+                        </div>
+                    </div>
+                </div>
+
+              </div>
+              
+              <div class="dots-container" id="dots-container"></div>
+
+        </div>
+
+
+
+
+
+        <div class="contenedor_universal" id="cumbre200">
+
+            <div class="contenedor_universal_encabezado">
+                <div class="contenedor_universal_encabezado_seccion_1">
+                    <img src="assets/img/burbujas2.jpg" class="imagen_burbujas_1" alt="CUMBRE 200" loading="lazy">
+                </div>
+                <div class="contenedor_universal_encabezado_seccion_2">
+                    <div class="contenedor_universal_titulo">
+                        <div class="contenedor_circulos">
+                            <div class="circulo_1"></div>
+                        </div>
+                        <div class="contenedor_circulos">
+                            <div class="circulo_2"></div>
+                        </div>
+                        <div class="contenedor_circulos">
+                            <div class="circulo_3"></div>
+                        </div>
+                        <div class="contenedor_texto_universal_titulo">
+                            <p class="texto_universal_titulo">CUMBRE 200</p>
+                        </div>
+                        <div class="contenedor_circulos">
+                            <div class="circulo_3"></div>
+                        </div>
+                        <div class="contenedor_circulos">
+                            <div class="circulo_2"></div>
+                        </div>
+                        <div class="contenedor_circulos">
+                            <div class="circulo_1"></div>
+                        </div>
+                    </div>
+                    <div class="contenedor_universal_descripcion">
+                        <p class="texto_universal_descripcion">
+                            Mira este contenido a través de nuestro canal en YouTube "Mundo Ejecutivo TV" y maravíllate con todo lo que "Cumbre 200" tiene para ofrecer.
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="contenedor_universal_contenido">
+                <div class="contenedor_universal_contenido_seccion_1">
+                    <div class="contenedor_universal_seccion_texto ajuste_center">
+                        <p class="texto_registrate_titulo">EMPODERAMIENTO FEMENINO</p>
+                        <div class="contenedor_descripcion_textos">
+                            <p class="texto_registrate_descripcion_2">Mira los temas más trascendentales que fueron abordados en "Cumbre 200, las mujeres más importantes de México" y descubre el impacto que estos tuvieron a lo largo de la república mexicana y el resto del mundo.</p>
+                        </div>
+                    </div>
+                    <div class="contenedor_universal_seccion_botones ajuste_center">
+                        <button class="boton_registrar_4 ajuste_altura_boton2" onClick="javascript:youtube()">YouTube</button>
+                    </div>
+                </div>
+                <div class="contenedor_universal_contenido_seccion_2">
+                    <iframe class="video_youtube" src="https://www.youtube.com/embed/x-7SoEhooII" title="Cumbre de las 200 Mujeres más importantes de México" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                </div>
+            </div>
+        </div>
+
+
+
+        
+
+        <div class="contenedor_universal" id="registrate">
+
+            <div class="contenedor_universal_encabezado ajuste_end">
+                <div class="contenedor_universal_encabezado_seccion_2">
+                    <div class="contenedor_universal_titulo">
+                        <div class="contenedor_circulos">
+                            <div class="circulo_1"></div>
+                        </div>
+                        <div class="contenedor_circulos">
+                            <div class="circulo_2"></div>
+                        </div>
+                        <div class="contenedor_circulos">
+                            <div class="circulo_3"></div>
+                        </div>
+                        <div class="contenedor_texto_universal_titulo">
+                            <p class="texto_universal_titulo">CUMBRE 200</p>
+                        </div>
+                        <div class="contenedor_circulos">
+                            <div class="circulo_3"></div>
+                        </div>
+                        <div class="contenedor_circulos">
+                            <div class="circulo_2"></div>
+                        </div>
+                        <div class="contenedor_circulos">
+                            <div class="circulo_1"></div>
+                        </div>
+                    </div>
+                    <div class="contenedor_universal_descripcion">
+                        <p class="texto_universal_descripcion">Revive los momentos más emocionantes de la edición 2024 de "Cumbre 200, las mujeres más importantes de México", esto bajo la compañía de las mayores panelistas del país.</p>
+                    </div>
+                </div>
+                <div class="contenedor_universal_encabezado_seccion_1 ajuste_end">
+                    <img src="assets/img/burbujas3.jpg" class="imagen_burbujas_1" alt="CUMBRE 200" loading="lazy">
+                </div>
+            </div>
+
+            <div class="contenedor_universal_contenido degradado_gradient gap_especial">
+                <div class="contenedor_universal_contenido_seccion_2 justificar_ancho_degradado">
+                    <iframe class="video_youtube ajuste_video" src="https://www.youtube.com/embed/eUOUngybpvQ" title="Cumbre de las 200 Mujeres más Importantes de México" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                </div>
+                <div class="contenedor_universal_contenido_seccion_1 justificar_ancho_degradado">
+                    <div class="contenedor_universal_seccion_texto ajuste_center">
+                        <p class="texto_registrate_titulo color_blanco">EMPRENDIMIENTO FEMENINO</p>
+                        <div class="contenedor_descripcion_textos">
+                            <p class="texto_registrate_descripcion_2 color_blanco">Forma parte de la conversación y descubre todos los temas que se abordaron en la mesa de diálogo de "Cumbre 200, las mujeres más importantes de México".</p>
+                        </div>
+                    </div>
+                    <div class="contenedor_universal_seccion_botones ajuste_center">
+                        <button class="boton_registrar_3 ajuste_altura_boton2 colordegradado" onClick="javascript:youtube_2()">Ver contenido</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+
+
+        
+        <div class="contenedor_universal" id="entregas">
+
+            <div class="contenedor_universal_encabezado">
+                <div class="contenedor_universal_encabezado_seccion_1">
+                    <img src="assets/img/burbujas2.jpg" class="imagen_burbujas_1" alt="CUMBRE 200" loading="lazy">
+                </div>
+                <div class="contenedor_universal_encabezado_seccion_2">
+                    <div class="contenedor_universal_titulo">
+                        <div class="contenedor_circulos">
+                            <div class="circulo_1"></div>
+                        </div>
+                        <div class="contenedor_circulos">
+                            <div class="circulo_2"></div>
+                        </div>
+                        <div class="contenedor_circulos">
+                            <div class="circulo_3"></div>
+                        </div>
+                        <div class="contenedor_texto_universal_titulo">
+                            <p class="texto_universal_titulo">PREMIACIONES</p>
+                        </div>
+                        <div class="contenedor_circulos">
+                            <div class="circulo_3"></div>
+                        </div>
+                        <div class="contenedor_circulos">
+                            <div class="circulo_2"></div>
+                        </div>
+                        <div class="contenedor_circulos">
+                            <div class="circulo_1"></div>
+                        </div>
+                    </div>
+                    <div class="contenedor_universal_descripcion">
+                        <p class="texto_universal_descripcion">No te pierdas las premiaciones de Cumbre de las 200 mujeres más importantes de México. Descubre más ideas innovadoras, conversaciones reveladoras y acciones inspiradoras para un futuro mejor.</p>
+                    </div>
+                </div>
+            </div>
+
+
+
+            <div class="contenedor_universal_contenido_entregas ajuste_spacebetween">
+
+                <div class="lateral_entregas" onClick="javascript:cambiar_videos_atras()" id="id_lateral_videos_4">
+                    <p class="texto_boton_izquiera">
+                        &lt;
+                    </p>
+                </div>
+                <div class="lateral_entregas_3" onClick="javascript:cambiar_videos_atras_2()" id="id_lateral_videos_3">
+                    <p class="texto_boton_izquiera">
+                        &lt;
+                    </p>
+                </div>
+
+
+
+                <div class="tarjeta_entregas" id="id_cambiar_video_1">
+                    <iframe class="video_youtube" title="Video CUMBRE 200 de YouTube" src="https://www.youtube.com/embed/5wYOOlYoXtc?list=PLcPasP33lrPUsJEwGIRCFPTGLtoekGFZr" title="Cumbre del las 200 mujeres más importantes de México" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+                </div>
+                <div class="tarjeta_entregas" id="id_cambiar_video_2">
+                    <iframe class="video_youtube" title="Video CUMBRE 200 de YouTube" src="https://www.youtube.com/embed/mDPptptXyqg?list=PLcPasP33lrPUsJEwGIRCFPTGLtoekGFZr" title="Carolina Salazar, Fundadora de Design Thinking, Cumbre del las 200 mujeres más importantes de México" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+                </div>
+
+                <div class="tarjeta_entregas_2" id="id_cambiar_video_3">
+                    <iframe class="video_youtube" title="Video CUMBRE 200 de YouTube" src="https://www.youtube.com/embed/NfdpJ5MEGN8?list=PLcPasP33lrPUsJEwGIRCFPTGLtoekGFZr" title="Carolina Salazar, Fundadora de Design Thinking, Cumbre del las 200 mujeres más importantes de México" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+                </div>
+                <div class="tarjeta_entregas_2" id="id_cambiar_video_4">
+                    <iframe class="video_youtube" title="Video CUMBRE 200 de YouTube" src="https://www.youtube.com/embed/jcO-ChEl14c?list=PLcPasP33lrPUsJEwGIRCFPTGLtoekGFZr" title="Luz María Zetina, Actriz y conductora, Cumbre del las 200 mujeres más importantes de México" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+                </div>
+
+                <div class="tarjeta_entregas_3" id="id_cambiar_video_5">
+                    <iframe class="video_youtube" title="Video CUMBRE 200 de YouTube" src="https://www.youtube.com/embed/ITIAdzp6GWE?list=PLcPasP33lrPUsJEwGIRCFPTGLtoekGFZr" title="Romina Biamino, Conferencista, Cumbre del las 200 mujeres más importantes de México" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+                </div>
+                <div class="tarjeta_entregas_3" id="id_cambiar_video_6">
+                    <iframe class="video_youtube" title="Video CUMBRE 200 de YouTube" src="https://www.youtube.com/embed/d5gFV4NrWCM?list=PLcPasP33lrPUsJEwGIRCFPTGLtoekGFZr" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+                </div>
+
+
+
+                <div class="lateral_entregas" onClick="javascript:cambiar_videos_despues()" id="id_lateral_videos_2">
+                    <p class="texto_boton_izquiera">
+                        &gt;
+                    </p>
+                </div>
+                <div class="lateral_entregas_2" onClick="javascript:cambiar_videos_despues_2()" id="id_lateral_videos">
+                    <p class="texto_boton_izquiera">
+                        &gt;
+                    </p>
+                </div>
+
+            </div>
+        </div>
+
+
+
+        <div class="contenedor_universal" id="registrate">
+
+            <div class="contenedor_universal_encabezado ajuste_end">
+                <div class="contenedor_universal_encabezado_seccion_2">
+                    <div class="contenedor_universal_titulo">
+                        <div class="contenedor_circulos">
+                            <div class="circulo_1"></div>
+                        </div>
+                        <div class="contenedor_circulos">
+                            <div class="circulo_2"></div>
+                        </div>
+                        <div class="contenedor_circulos">
+                            <div class="circulo_3"></div>
+                        </div>
+                        <div class="contenedor_texto_universal_titulo">
+                            <p class="texto_universal_titulo">TRANSFORMACIÓN</p>
+                        </div>
+                        <div class="contenedor_circulos">
+                            <div class="circulo_3"></div>
+                        </div>
+                        <div class="contenedor_circulos">
+                            <div class="circulo_2"></div>
+                        </div>
+                        <div class="contenedor_circulos">
+                            <div class="circulo_1"></div>
+                        </div>
+                    </div>
+                    <div class="contenedor_universal_descripcion">
+                        <p class="texto_universal_descripcion">Mira contenido exclusivo de la experiencia CUMBRE 200 y maravíllate con los temas abordados que transformarán a México y el mundo.</p>
+                    </div>
+                </div>
+                <div class="contenedor_universal_encabezado_seccion_1 ajuste_end">
+                    <img src="assets/img/burbujas3.jpg" class="imagen_burbujas_1" alt="CUMBRE 200" loading="lazy">
+                </div>
+            </div>
+
+            <div class="contenedor_universal_contenido degradado_gradient gap_especial">
+                <div class="contenedor_universal_contenido_seccion_2 justificar_ancho_degradado">
+                    <iframe class="video_youtube ajuste_video" src="https://www.youtube.com/embed/2vKXzvleUnA" title="Cumbre las 200 Mujeres más importantes de México" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                </div>
+                <div class="contenedor_universal_contenido_seccion_1 justificar_ancho_degradado">
+                    <div class="contenedor_universal_seccion_texto ajuste_center">
+                        <p class="texto_registrate_titulo color_blanco">EMPODERAMIENTO</p>
+                        <div class="contenedor_descripcion_textos">
+                            <p class="texto_registrate_descripcion_2 color_blanco">No te pierdas el contenido más reciente de CUMBRE 200 y descubre por que es el evento más compartido del año.</p>
+                        </div>
+                    </div>
+                    <div class="contenedor_universal_seccion_botones ajuste_center">
+                        <button class="boton_registrar_3 ajuste_altura_boton2 colordegradado" onClick="javascript:youtube_3()">Ver contenido</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+
+        <div class="contenedor_universal" id="cumbre200">
+
+            <div class="contenedor_universal_encabezado ajuste_end">
+                <div class="contenedor_universal_encabezado_seccion_2 ajuste_width_evento">
+                    <div class="contenedor_universal_titulo">
+                        <div class="contenedor_circulos">
+                            <div class="circulo_1"></div>
+                        </div>
+                        <div class="contenedor_circulos">
+                            <div class="circulo_2"></div>
+                        </div>
+                        <div class="contenedor_circulos">
+                            <div class="circulo_3"></div>
+                        </div>
+                        <div class="contenedor_texto_universal_titulo">
+                            <p class="texto_universal_titulo">ENTREGAS</p>
+                        </div>
+                        <div class="contenedor_circulos">
+                            <div class="circulo_3"></div>
+                        </div>
+                        <div class="contenedor_circulos">
+                            <div class="circulo_2"></div>
+                        </div>
+                        <div class="contenedor_circulos">
+                            <div class="circulo_1"></div>
+                        </div>
+                    </div>
+                    <div class="contenedor_universal_descripcion">
+                        <p class="texto_universal_descripcion">¡Revive la emoción de la CUMBRE de las 200 mujeres más importantes de México! 
+
+                        <br><br>Viaja a través del tiempo y explora los momentos más destacados de este evento.</p>
+                    </div>
+                </div>
+                <div class="contenedor_universal_encabezado_seccion_1 ajuste_end ajuste_width_evento_2">
+                    <img src="assets/img/burbujas3.jpg" class="imagen_burbujas_1" alt="CUMBRE 200" loading="lazy">
+                </div>
+            </div>
+
+            <div class="contenedor_universal_contenido ajuste_height_celular_2">
+
+                <div class="contenedor_universal_contenido_seccion_3">
+                    <div class="contenedor_imagenes_evento">
+                        <img src="assets/img/20222023.jpeg" class="imagen_revista2" alt="CUMBRE 200" loading="lazy">
+                        <p class="texto_imagen">"INTELIGENCIA"</p>
+                    </div>
+                    <div class="contenedor_imagenes_evento">
+                        <img src="assets/img/imagen8.jpeg" class="imagen_revista2" alt="CUMBRE 200" loading="lazy">
+                        <p class="texto_imagen">"LIDERAZGO"</p>
+                    </div>
+                    <div class="contenedor_imagenes_evento">
+                        <img src="assets/img/imagen9.jpeg" class="imagen_revista2" alt="CUMBRE 200" loading="lazy">
+                        <p class="texto_imagen">"AUDACIA"</p>
+                    </div>
+                    <div class="contenedor_imagenes_evento">
+                        <img src="assets/img/imagen7.jpeg" class="imagen_revista2" alt="CUMBRE 200" loading="lazy">
+                        <p class="texto_imagen">"ASTUCIA"</p>
+                    </div>
+                    <div class="contenedor_imagenes_evento">
+                        <img src="assets/img/imagen3.jpeg" class="imagen_revista2" alt="CUMBRE 200" loading="lazy">
+                        <p class="texto_imagen">"SABIDURÍA"</p>
+                    </div>
+                    <div class="contenedor_imagenes_evento">
+                        <img src="assets/img/imagen2.jpeg" class="imagen_revista2" alt="CUMBRE 200" loading="lazy">
+                        <p class="texto_imagen">"EMPODERAMIENTO"</p>
+                    </div>
+                    <div class="contenedor_imagenes_evento">
+                        <img src="assets/img/cumbre200_2.jpeg" class="imagen_revista2" alt="CUMBRE 200" loading="lazy">
+                        <p class="texto_imagen">"VISIÓN"</p>
+                    </div>
+                    <div class="contenedor_imagenes_evento">
+                        <img src="assets/img/cumbre200_3.jpeg" class="imagen_revista2" alt="CUMBRE 200" loading="lazy">
+                        <p class="texto_imagen">"EMPRENDIMIENTO"</p>
+                    </div>
+                    <div class="contenedor_imagenes_evento">
+                        <img src="assets/img/cumbre_200_9.jpg" class="imagen_revista2" alt="CUMBRE 200" loading="lazy">
+                        <p class="texto_imagen">"FORTALEZA"</p>
+                    </div>
+                    <div class="contenedor_imagenes_evento">
+                        <img src="assets/img/cumbre_200_10.jpg" class="imagen_revista2" alt="CUMBRE 200" loading="lazy">
+                        <p class="texto_imagen">"ASTUCIA"</p>
+                    </div>
+                    <div class="contenedor_imagenes_evento">
+                        <img src="assets/img/cumbre_200_11.jpg" class="imagen_revista2" alt="CUMBRE 200" loading="lazy">
+                        <p class="texto_imagen">"PODEROSAS"</p>
+                    </div>
+                    <div class="contenedor_imagenes_evento">
+                        <img src="assets/img/cumbre_200_12.jpg" class="imagen_revista2" alt="CUMBRE 200" loading="lazy">
+                        <p class="texto_imagen">"EMPRESARIAS"</p>
+                    </div>
+                </div>
+
+            </div>
+
+
+        </div>
+
+
+
+
+
+        <div class="contenedor_universal" id="cumbre200">
+
+            <div class="contenedor_universal_encabezado">
+                <div class="contenedor_universal_encabezado_seccion_1">
+                    <img src="assets/img/burbujas2.jpg" class="imagen_burbujas_1" alt="CUMBRE 200" loading="lazy">
+                </div>
+                <div class="contenedor_universal_encabezado_seccion_2">
+                    <div class="contenedor_universal_titulo">
+                        <div class="contenedor_circulos">
+                            <div class="circulo_1"></div>
+                        </div>
+                        <div class="contenedor_circulos">
+                            <div class="circulo_2"></div>
+                        </div>
+                        <div class="contenedor_circulos">
+                            <div class="circulo_3"></div>
+                        </div>
+                        <div class="contenedor_texto_universal_titulo">
+                            <p class="texto_universal_titulo">NEWSLETTER</p>
+                        </div>
+                        <div class="contenedor_circulos">
+                            <div class="circulo_3"></div>
+                        </div>
+                        <div class="contenedor_circulos">
+                            <div class="circulo_2"></div>
+                        </div>
+                        <div class="contenedor_circulos">
+                            <div class="circulo_1"></div>
+                        </div>
+                    </div>
+                    <div class="contenedor_universal_descripcion">
+                        <p class="texto_universal_descripcion">¡Suscríbete ahora a nuestro newsletter y descubre un mundo de conocimiento y experiencias! Sumérgete en artículos, entrevistas y reflexiones que marcaron un hito en la historia.</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="contenedor_universal_contenido degradado_gradient gap_especial">
+                <div class="contenedor_universal_contenido_seccion_2 justificar_ancho_degradado">
+                    <iframe class="video_youtube ajuste_video" src="https://www.youtube.com/embed/H_qyIVfn2a4" title="Cumbre de las 200 Mujeres más importantes de México" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                </div>
+                <div class="contenedor_universal_contenido_seccion_1 justificar_ancho_degradado">
+                    <div class="contenedor_universal_seccion_texto ajuste_center">
+                        <p class="texto_registrate_titulo color_blanco">MUJER EN EL SECTOR EMPRESARIAL</p>
+                        <div class="contenedor_descripcion_textos">
+                            <p class="texto_registrate_descripcion_2 color_blanco">Conoce la relevancia e importancia de la mujer en el sector empresarial y como su participación está transformando e innovando la industria</p>
+                        </div>
+                    </div>
+                    <div class="contenedor_universal_seccion_botones ajuste_center">
+                        <button class="boton_registrar_3 ajuste_altura_boton2 colordegradado" onClick="javascript:youtube()">Ver contenido</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+
+
+
+        <div class="contenedor_universal" id="cumbre200">
+
+            <div class="contenedor_universal_encabezado ajuste_end">
+                <div class="contenedor_universal_encabezado_seccion_2">
+                    <div class="contenedor_universal_titulo">
+                        <div class="contenedor_circulos">
+                            <div class="circulo_1"></div>
+                        </div>
+                        <div class="contenedor_circulos">
+                            <div class="circulo_2"></div>
+                        </div>
+                        <div class="contenedor_circulos">
+                            <div class="circulo_3"></div>
+                        </div>
+                        <div class="contenedor_texto_universal_titulo">
+                            <p class="texto_universal_titulo ajuste_texto_titulo_bloques">CUMBRE 200</p>
+                        </div>
+                        <div class="contenedor_circulos">
+                            <div class="circulo_3"></div>
+                        </div>
+                        <div class="contenedor_circulos">
+                            <div class="circulo_2"></div>
+                        </div>
+                        <div class="contenedor_circulos">
+                            <div class="circulo_1"></div>
+                        </div>
+                    </div>
+                    <div class="contenedor_universal_descripcion">
+                        <p class="texto_universal_descripcion">¿No pudiste asistir al evento? Descuida, en "Mundo Ejecutivo TV" te traemos lo mejor de "Cumbre 200".</p>
+                    </div>
+                </div>
+                <div class="contenedor_universal_encabezado_seccion_1 ajuste_end">
+                    <img src="assets/img/burbujas3.jpg" class="imagen_burbujas_1" alt="CUMBRE 200" loading="lazy">
+                </div>
+            </div>
+
+            <div class="contenedor_universal_contenido_jira">
+                <div class="contenedor_universal_contenido_seccion_22">
+                    <img src="assets/img/20222023.jpeg" class="imagen_sponsors_8" alt="CUMBRE 200" loading="lazy">
+                </div>
+                <div class="contenedor_universal_contenido_seccion_11 ajuste_end">
+                    <div class="contenedor_universal_seccion_texto_2">
+                        <div class="contenedor_tarjeta_redes_sociales">
+                            <div class="tarjeta_redes_sociales" onClick="javascript:facebook()">
+                                <img src="assets/img/facebook.png" class="redes_sociales_8">
+                                <p class="texto_redes_sociales">Facebook</p>
+                            </div>
+                            <div class="tarjeta_redes_sociales" onClick="javascript:instagram()">
+                                <img src="assets/img/instagram.png" class="redes_sociales_8">
+                                <p class="texto_redes_sociales">Instagram</p>
+                            </div>
+                            <div class="tarjeta_redes_sociales" onClick="javascript:youtube()">
+                                <img src="assets/img/youtube.png" class="redes_sociales_8">
+                                <p class="texto_redes_sociales">YouTube</p>
+                            </div>
+                            <div class="tarjeta_redes_sociales" onClick="javascript:linkedin()">
+                                <img src="assets/img/linkedin.png" class="redes_sociales_8">
+                                <p class="texto_redes_sociales">LinkedIn</p>
+                            </div>
+                            <div class="tarjeta_redes_sociales" onClick="javascript:twitter()">
+                                <img src="assets/img/x.png" class="redes_sociales_8">
+                                <p class="texto_redes_sociales">X</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+
+
+
+        <div class="contenedor_universal_degradado">
+            <p class="texto_titulo_contenedor_universal">CONOCE NUESTRAS REVISTAS</p>
+            <div id="coverflow">
+                <ul class="flip-items">
+                    <li data-flip-title="Red" onClick="javascript:revista_1()">
+                        <img src="sistemas/demo/img/imagen_1.png">
+                    </li>
+                    <li data-flip-title="Razzmatazz" onClick="javascript:revista_2()" data-flip-category="Purples">
+                        <img src="sistemas/demo/img/imagen_2.png">
+                    </li>
+                    <li data-flip-title="Razzmatazz" onClick="javascript:revista_11()" data-flip-category="Purples">
+                        <img src="sistemas/demo/img/imagen_11.png">
+                    </li>
+                    <li data-flip-title="Deep Lilac" onClick="javascript:revista_3()" data-flip-category="Purples">
+                        <img src="sistemas/demo/img/imagen_3.png">
+                    </li>
+                    <li data-flip-title="Daisy Bush" onClick="javascript:revista_4()" data-flip-category="Purples">
+                        <img src="sistemas/demo/img/imagen_4.png">
+                    </li>
+                    <li data-flip-title="Cerulean Blue" onClick="javascript:revista_5()" data-flip-category="Blues">
+                        <img src="sistemas/demo/img/imagen_5.png">
+                    </li>
+                    <li data-flip-title="Dodger Blue" onClick="javascript:revista_6()" data-flip-category="Blues">
+                        <img src="sistemas/demo/img/imagen_6.png">
+                    </li>
+                    <li data-flip-title="Cyan" onClick="javascript:revista_7()" data-flip-category="Blues">
+                        <img src="sistemas/demo/img/imagen_7.png">
+                    </li>
+                    <li data-flip-title="Robin's Egg" onClick="javascript:revista_8()" data-flip-category="Blues">
+                        <img src="sistemas/demo/img/imagen_8.png">
+                    </li>
+                    <li data-flip-title="Deep Sea" onClick="javascript:revista_9()" data-flip-category="Greens">
+                        <img src="sistemas/demo/img/imagen_9.png">
+                    </li>
+                    <li data-flip-title="Apple" onClick="javascript:revista_10()" data-flip-category="Greens">
+                        <img src="sistemas/demo/img/imagen_10.png">
+                    </li>
+                </ul>
+            </div>
+        </div>
+
+
+
+
+
+        <div class="contenedor_universal ajuste_center ajuste_bottom" id="sponsors">
+
+            <div class="contenedor_universal_encabezado ajuste_center ajustealtura_fondo">
+                <div class="contenedor_universal_encabezado_seccion_2 ajuste_width80">
+                    <div class="contenedor_universal_titulo ajuste_center">
+                        <div class="contenedor_circulos">
+                            <div class="circulo_1"></div>
+                        </div>
+                        <div class="contenedor_circulos">
+                            <div class="circulo_2"></div>
+                        </div>
+                        <div class="contenedor_circulos">
+                            <div class="circulo_3"></div>
+                        </div>
+                        <div class="contenedor_texto_universal_titulo">
+                            <p class="texto_universal_titulo">SPONSORS</p>
+                        </div>
+                        <div class="contenedor_circulos">
+                            <div class="circulo_3"></div>
+                        </div>
+                        <div class="contenedor_circulos">
+                            <div class="circulo_2"></div>
+                        </div>
+                        <div class="contenedor_circulos">
+                            <div class="circulo_1"></div>
+                        </div>
+                    </div>
+                    <div class="contenedor_universal_descripcion">
+                        <p class="texto_universal_descripcion ajuste_text_align_center">Descubre a los patrocinadores que hacen posible Cumbre de las 200 mujeres más importantes de México, el evento que reúne a líderes que están impulsando el cambio. Conoce a las marcas y organizaciones que respaldan esta iniciativa y contribuyen a su éxito.</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="contenedor_universal_contenido_3 ajuste_ancho_100 ajustealtura_fondo_3">
+                <img src="assets/img/visa.png" class="imagen_sponsors_fondo_2" alt="Visa" loading="lazy">
+            </div>
+
+            <div class="contenedor_universal_contenido_3 ajuste_ancho_100">
+                <img src="assets/img/fondo.jpg" class="imagen_sponsors_fondo" alt="Sponsors" loading="lazy">
+            </div>
+
+        </div>
+        
+
+
+
+        <div class="contenedor_inferior">
+            <img src="assets/img/facebook.png" class="redes_sociales" onClick="javascript:facebook()" alt="Facebook">
+            <img src="assets/img/x.png" class="redes_sociales" onClick="javascript:twitter()" alt="X">
+            <img src="assets/img/instagram.png" class="redes_sociales" onClick="javascript:instagram()" alt="Instagram">
+            <img src="assets/img/linkedin.png" class="redes_sociales" onClick="javascript:linkedin()" alt="LinkedIn">
+            <img src="assets/img/youtube.png" class="redes_sociales" onClick="javascript:youtube()" alt="YouTube">
+        </div>
+
+    </header>
+
+
+
+    
+
+    <div class="contenedor_superpuesto" >
+        <div class="contenedor_superpuesto_centrado">
+            <img src="assets/img/logogeneral.png" class="imagen_logo_contenedor" alt="CUMBRE 200">
+        </div>
+    </div>
+
+    <div class="contenedor_superpuesto_2">
+        <div class="contenedor_superpuesto_2_seccion_1">
+        </div>
+        <div class="contenedor_superpuesto_2_seccion_2">
+            <div class="contenedor_imagen_marcas_2">
+                <img src="assets/img/Logo-GME-50-anos.png" class="imagen_marcas" alt="Mundo Ejecutivo 50 años">
+            </div>
+        </div>
+    </div>
+
+    <div class="contenedor_superpuesto_3">
+        <div class="contenedor_superpuesto_2_centrado">
+            <p class="texto_frase_bienvenida">"CUMBRE 200, el evento más importante de marzo. <br> Forma parte de la transformación"</p>
+            <br><br><br>
+            <div class="contenedor_boton_confirmar">
+                <button class="boton_registrar colordegradado anchoboton" onClick="javascript:transmision()">VER</button>
+            </div>
+        </div>
+    </div>
+
+
+
+    <div class="contenedor_chatbot" id="id_contenedor_tarjetas_chatbot">
+        <div class="contenedor_chatbot_seccion_1" id="id_tarjetas_chatbot">
+            <div class="tarjetas_chatbot colordegradado" onClick="javascript:transmision()">
+                <p class="texto_tarjetas_chatbot">PREMIACIONES</p>
+            </div>
+            <div class="tarjetas_chatbot" onClick="javascript:emergente()">
+                <p class="texto_tarjetas_chatbot">CHAT BOT</p>
+            </div>
+        </div>
+        <div class="contenedor_chatbot_seccion_2">
+            <img src="assets/img/mujer.png" class="imagen_chat_bot" onClick="javascript:tarjetas_chatbot()" alt="Chat Bot CUMBRE 200">
+        </div>
+    </div>
+
+
+    <div class="contenedor_emergente_chatbot" id="id_emergente">
+        <div class="emergente_chatbot">
+            <div class="emergente_chatbot_botones">
+                <div class="emergente_botones" onClick="javascript:boton_cerrar()"></div>
+            </div>
+            <div class="emergente_chatbot_contenido">
+                <div class="emergente_chatbot_seccion_1">
+                    <div class="contenedor_titulo_emergente">
+                        <p class="texto_emergente_titulos" id="id_titulo_emergente">Contactos</p>
+                    </div>
+                    <div class="contenedor_contenido_emergente">
+                        <iframe class="mapa_emergente" id="id_mapa_emergente" src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d1881.3322605641263!2d-99.1960294!3d19.4268958!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x85d201ff2834e4b7%3A0x82d2cf1eb3d44e14!2sJW%20Marriott%20Hotel%20Mexico%20City!5e0!3m2!1ses!2smx!4v1707781983589!5m2!1ses!2smx" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                        <iframe class="itinerario_emergente" id="id_itinerario_emergente" src="assets/itinerario.pdf" width="600" height="400"></iframe>
+                        <iframe class="revista_emergente" id="id_revista_emergente" src="assets/revista200.pdf" width="600" height="400"></iframe>
+                    </div>
+                </div>
+                <div class="emergente_chatbot_seccion_2">
+                    <div class="contenedor_titulo_emergente_2">
+                        <div class="contenedor_perfil">
+                            <div class="contenedor_imagen_emergente_chatbot">
+                                <img src="assets/img/LOGO.png" class="imagen_pefil_chatbot" alt="CUMBRE 200">
+                            </div>
+                        </div>
+                        <p class="texto_nombre_bot">CUMBRE 200 Chat Bot</p>
+                    </div>
+                    <div class="contenedor_contenido_emergente_2" id="chat-box">
+                    </div>
+                    <div class="contenedor_redactar_emergente">
+                        <input class="campo_redactar_mensaje_chatbot" type="text" id="user-input" placeholder="Escribe tu mensaje...">
+                        <button class="boton_enviar_mensaje_chatbot" onclick="enviarMensaje()">Enviar</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="boton_fixed_2" onClick="javascript:transmision()">
+        <div class="boton_fixed_seccion_1">
+            <p class="texto_boton_fixed">PREMIACIONES</p>
+        </div>
+        <div class="boton_fixed_seccion_2">
+            <img src="assets/img/premiaciones.png" class="imagen_marcador">
+        </div>
+    </div>
+
+    <script src="assets/scripts/main.js"></script>
+
+
+
+
+
+    <!-- ---------------- -->
+    <!-- SCRIPTS | INICIO -->
+    <!-- ---------------- -->
+    <script>
+        var coverflow = $("#coverflow").flipster();
+    </script>
+        <!-- ---------------- -->
+    <!-- SCRIPTS | FINAL  -->
+    <!-- ---------------- -->
+
+
+
+
+
+</body>
+</html>
